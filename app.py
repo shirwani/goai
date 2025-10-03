@@ -25,7 +25,8 @@ def url_for(endpoint, **values):
     # Add /goai/ prefix to all URLs except static files
     if not url.startswith('/static/'):
         return '/goai' + url
-    return url
+    # For static files, add /goai/ prefix to make them work with nginx
+    return '/goai' + url
 
 # Make url_for available in templates
 app.jinja_env.globals['url_for'] = url_for
