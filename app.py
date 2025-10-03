@@ -4,6 +4,18 @@ import os
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'your-secret-key-here')
 
+# Configure Flask for subfolder deployment
+# This tells Flask that the app is served from /goai/ subfolder
+app.config['APPLICATION_ROOT'] = '/goai'
+
+# Context processor to handle subfolder URLs
+@app.context_processor
+def inject_subfolder():
+    return {
+        'subfolder': '/goai',
+        'base_url': request.url_root.rstrip('/') + '/goai'
+    }
+
 @app.route('/')
 def home():
     return render_template('index.html')
