@@ -82,9 +82,9 @@ function initScrollEffects() {
         observer.observe(el);
     });
     
-    // Parallax effect for hero section
+    // Parallax effect for hero section (disabled on mobile for better performance)
     const hero = document.querySelector('.hero');
-    if (hero) {
+    if (hero && window.innerWidth > 768) {
         window.addEventListener('scroll', function() {
             const scrolled = window.pageYOffset;
             const parallax = scrolled * 0.5;

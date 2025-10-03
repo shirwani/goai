@@ -360,8 +360,10 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: scroll;
     position: relative;
     overflow: hidden;
+    will-change: auto;
 }
 
 .hero::before {
@@ -1113,6 +1115,9 @@ a:hover {
     .hero {
         padding: var(--spacing-8) 0;
         min-height: auto;
+        background-attachment: scroll !important;
+        transform: none !important;
+        will-change: auto;
     }
     
     .hero-content h1 {
@@ -1359,6 +1364,8 @@ a:hover {
 @media (max-width: 768px) and (orientation: landscape) {
     .hero {
         padding: var(--spacing-4) 0;
+        background-attachment: scroll !important;
+        transform: none !important;
     }
     
     .hero-content h1 {
@@ -1367,6 +1374,36 @@ a:hover {
     
     .hero-image img {
         max-height: 200px;
+    }
+}
+
+/* iOS Safari specific fixes */
+@supports (-webkit-touch-callout: none) {
+    .hero {
+        background-attachment: scroll !important;
+        transform: none !important;
+        -webkit-transform: none !important;
+        will-change: auto;
+    }
+    
+    .hero::before {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* Mobile scroll optimization */
+@media (max-width: 768px) {
+    .hero {
+        -webkit-overflow-scrolling: touch;
+        transform: none !important;
+        -webkit-transform: none !important;
+        background-attachment: scroll !important;
+    }
+    
+    .hero-container {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 }
 
