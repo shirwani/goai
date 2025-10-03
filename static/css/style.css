@@ -235,8 +235,8 @@ a:hover {
 }
 
 .nav-logo .logo {
-    height: 150px;
-    width: 400px;
+    height: 80px;
+    width: auto;
 }
 
 .nav-menu {
