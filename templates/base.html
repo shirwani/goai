@@ -23,7 +23,7 @@
         "@type": "Organization",
         "name": "GO AI Marketing Services",
         "url": "{{ request.url_root }}",
-        "logo": "{{ url_for('static', filename='images/logo.png', _external=True) }}",
+        "logo": "{{ url_for('static', filename='images/logo.jpeg', _external=True) }}",
         "description": "AI-powered digital marketing solutions for businesses",
         "address": {
             "@type": "PostalAddress",
@@ -85,7 +85,7 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="{{ url_for('home') }}" aria-label="GO AI Marketing Services Home">
-                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="GO AI Marketing Services" class="logo">
+                    <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="GO AI Marketing Services" class="logo">
                 </a>
             </div>
             
@@ -151,7 +151,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="GO AI Marketing" class="footer-logo-image">
+                        <img src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="GO AI Marketing" class="footer-logo-image">
                     </div>
                     <p class="footer-description">
                         Transform your business with AI-powered marketing solutions that deliver measurable results and drive real growth.
