@@ -355,7 +355,7 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    padding: var(--spacing-24) 0;
+    padding: var(--spacing-12) 0;
     background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
     position: relative;
     overflow: hidden;
@@ -844,7 +844,7 @@ a:hover {
 
 @media (max-width: 768px) {
     .hero {
-        padding: var(--spacing-16) 0;
+        padding: var(--spacing-8) 0;
     }
     
     .hero-content h1 {
@@ -961,8 +961,8 @@ a:hover {
 
 /* Compact Layout Styles */
 .compact-hero {
-    min-height: 40vh !important;
-    padding-top: 60px !important;
+    min-height: 25vh !important;
+    padding-top: 40px !important;
 }
 
 .compact-hero .hero-content h1 {
