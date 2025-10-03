@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'your-secret-key-here')
 
 # Configure Flask for subfolder deployment
-# This tells Flask that the app is served from /goai/ subfolder
+# Set the URL prefix for all routes
 app.config['APPLICATION_ROOT'] = '/goai'
 
 # Context processor to handle subfolder URLs
@@ -15,6 +15,20 @@ def inject_subfolder():
         'subfolder': '/goai',
         'base_url': request.url_root.rstrip('/') + '/goai'
     }
+
+# Override url_for to add /goai/ prefix
+from flask import url_for as original_url_for
+from functools import wraps
+
+def url_for(endpoint, **values):
+    url = original_url_for(endpoint, **values)
+    # Add /goai/ prefix to all URLs except static files
+    if not url.startswith('/static/'):
+        return '/goai' + url
+    return url
+
+# Make url_for available in templates
+app.jinja_env.globals['url_for'] = url_for
 
 @app.route('/')
 def home():
