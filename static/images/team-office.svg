@@ -1,0 +1,65 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb"/>
+      <stop offset="100%" style="stop-color:#d1d5db"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Office desk -->
+  <rect x="50" y="250" width="500" height="20" fill="url(#deskGrad)"/>
+  
+  <!-- Computers -->
+  <rect x="100" y="200" width="80" height="50" fill="#1f2937" rx="5"/>
+  <rect x="200" y="200" width="80" height="50" fill="#1f2937" rx="5"/>
+  <rect x="300" y="200" width="80" height="50" fill="#1f2937" rx="5"/>
+  <rect x="400" y="200" width="80" height="50" fill="#1f2937" rx="5"/>
+  
+  <!-- Screens -->
+  <rect x="105" y="205" width="70" height="40" fill="#6366f1" opacity="0.8"/>
+  <rect x="205" y="205" width="70" height="40" fill="#06b6d4" opacity="0.8"/>
+  <rect x="305" y="205" width="70" height="40" fill="#8b5cf6" opacity="0.8"/>
+  <rect x="405" y="205" width="70" height="40" fill="#10b981" opacity="0.8"/>
+  
+  <!-- People silhouettes -->
+  <circle cx="140" cy="180" r="15" fill="#6366f1"/>
+  <rect x="130" y="195" width="20" height="30" fill="#6366f1"/>
+  
+  <circle cx="240" cy="180" r="15" fill="#06b6d4"/>
+  <rect x="230" y="195" width="20" height="30" fill="#06b6d4"/>
+  
+  <circle cx="340" cy="180" r="15" fill="#8b5cf6"/>
+  <rect x="330" y="195" width="20" height="30" fill="#8b5cf6"/>
+  
+  <circle cx="440" cy="180" r="15" fill="#10b981"/>
+  <rect x="430" y="195" width="20" height="30" fill="#10b981"/>
+  
+  <!-- AI/Marketing symbols floating -->
+  <g fill="#6366f1" opacity="0.6">
+    <circle cx="80" cy="100" r="3"/>
+    <circle cx="120" cy="80" r="2"/>
+    <circle cx="500" cy="90" r="3"/>
+    <circle cx="520" cy="120" r="2"/>
+  </g>
+  
+  <!-- Connection lines representing collaboration -->
+  <line x1="140" y1="180" x2="240" y2="180" stroke="#6366f1" stroke-width="2" opacity="0.3"/>
+  <line x1="240" y1="180" x2="340" y2="180" stroke="#06b6d4" stroke-width="2" opacity="0.3"/>
+  <line x1="340" y1="180" x2="440" y2="180" stroke="#8b5cf6" stroke-width="2" opacity="0.3"/>
+</svg>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}GO AI Marketing Services - AI-Powered Digital Marketing Solutions{% endblock %}</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="{% block meta_description %}Transform your business with GO AI Marketing Services. Expert AI-powered digital marketing including SEO, PPC, Social Media, Content Marketing, and Marketing Automation. Get results that matter.{% endblock %}">
+    <meta name="keywords" content="{% block meta_keywords %}AI marketing, digital marketing agency, SEO services, PPC advertising, social media marketing, content marketing, marketing automation, lead generation{% endblock %}">
+    <meta name="author" content="GO AI Marketing Services">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ request.url }}">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "GO AI Marketing Services",
+        "url": "{{ request.url_root }}",
+        "logo": "{{ url_for('static', filename='images/GoAI_Logo__1_-removebg-preview.png', _external=True) }}",
+        "description": "AI-powered digital marketing solutions for businesses",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "4732 Farm to Market 2920 Rd, PMB 1011",
+            "addressLocality": "Spring",
+            "addressRegion": "TX",
+            "postalCode": "77388",
+            "addressCountry": "US"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-281-670-9840",
+            "contactType": "customer service",
+            "email": "contact@goaimarketingservices.com"
+        },
+        "sameAs": [
+            "https://www.facebook.com/goaimarketingservices",
+            "https://www.twitter.com/goaimarketing",
+            "https://www.linkedin.com/company/goai-marketing-services",
+            "https://www.instagram.com/goaimarketingservices"
+        ]
+    }
+    </script>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    <meta property="og:title" content="{% block og_title %}{{ self.title() }}{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}{{ self.meta_description() }}{% endblock %}">
+    <meta property="og:image" content="{{ url_for('static', filename='images/og-image.jpg', _external=True) }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ request.url }}">
+    <meta property="twitter:title" content="{% block twitter_title %}{{ self.title() }}{% endblock %}">
+    <meta property="twitter:description" content="{% block twitter_description %}{{ self.meta_description() }}{% endblock %}">
+    <meta property="twitter:image" content="{{ url_for('static', filename='images/og-image.jpg', _external=True) }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/favicon.svg') }}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="{{ url_for('home') }}" aria-label="GO AI Marketing Services Home">
+                    <img src="{{ url_for('static', filename='images/GoAI_Logo__1_-removebg-preview.png') }}" alt="GO AI Marketing Services" class="logo">
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="{{ url_for('home') }}" class="nav-link {% if request.endpoint == 'home' %}active{% endif %}" role="menuitem" aria-current="{% if request.endpoint == 'home' %}page{% endif %}">Home</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="{{ url_for('services') }}" class="nav-link {% if request.endpoint == 'services' %}active{% endif %}" role="menuitem" aria-current="{% if request.endpoint == 'services' %}page{% endif %}">Services</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="{{ url_for('about') }}" class="nav-link {% if request.endpoint == 'about' %}active{% endif %}" role="menuitem" aria-current="{% if request.endpoint == 'about' %}page{% endif %}">About</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="{{ url_for('portfolio') }}" class="nav-link {% if request.endpoint == 'portfolio' %}active{% endif %}" role="menuitem" aria-current="{% if request.endpoint == 'portfolio' %}page{% endif %}">Portfolio</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="{{ url_for('blog') }}" class="nav-link {% if request.endpoint == 'blog' %}active{% endif %}" role="menuitem" aria-current="{% if request.endpoint == 'blog' %}page{% endif %}">Blog</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="{{ url_for('contact') }}" class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}" role="menuitem" aria-current="{% if request.endpoint == 'contact' %}page{% endif %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary" aria-label="Get started with GO AI Marketing Services">Get Started</a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message flash-{{ category }}">
+                        <span class="flash-text">{{ message }}</span>
+                        <button class="flash-close" onclick="this.parentElement.remove()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Main Content -->
+    <main class="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="{{ url_for('static', filename='images/GoAI_Logo__1_-removebg-preview.png') }}" alt="GO AI Marketing" class="logo">
+                    </div>
+                    <p class="footer-description">
+                        Transform your business with AI-powered marketing solutions that deliver measurable results and drive real growth.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('services') }}#seo">AI-Enhanced SEO</a></li>
+                        <li><a href="{{ url_for('services') }}#ppc">Smart PPC Advertising</a></li>
+                        <li><a href="{{ url_for('services') }}#social">Social Media Marketing</a></li>
+                        <li><a href="{{ url_for('services') }}#content">Content Marketing</a></li>
+                        <li><a href="{{ url_for('services') }}#email">Email Marketing</a></li>
+                        <li><a href="{{ url_for('services') }}#analytics">Marketing Analytics</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('about') }}">About Us</a></li>
+                        <li><a href="{{ url_for('portfolio') }}">Our Work</a></li>
+                        <li><a href="{{ url_for('blog') }}">Blog</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>4732 Farm to Market 2920 Rd, PMB 1011, Spring TX 77388, United States</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (281) 670-9840</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@goaimarketingservices.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2024 GO AI Marketing Services. All rights reserved.
+                    </p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_scripts %}{% endblock %}
+</body>
+</html>

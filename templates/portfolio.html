@@ -1,0 +1,336 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio - Our Success Stories | GO AI Marketing Services{% endblock %}
+
+{% block meta_description %}View our portfolio of successful AI marketing campaigns. See real results from 500+ clients across various industries. Get inspired by our case studies.{% endblock %}
+
+{% block meta_keywords %}marketing portfolio, case studies, success stories, client results, marketing campaigns, ROI examples{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero compact-hero">
+    <div class="hero-container">
+        <div class="hero-content fade-in-up">
+            <h1>Our Success Stories</h1>
+            <p>Discover how we've helped businesses across various industries achieve remarkable growth through our AI-powered marketing strategies. Real results, real clients, real success.</p>
+        </div>
+        <div class="hero-image fade-in-up">
+            <img src="{{ url_for('static', filename='images/Story-1.png') }}" alt="Marketing Success Stories" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Stats Section -->
+<section class="portfolio-stats compact-stats" style="background: var(--gray-50);">
+    <div class="services-container">
+        <div class="stats-grid">
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Successful Campaigns</div>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">150%</div>
+                <div class="stat-label">Average ROI Increase</div>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">$50M+</div>
+                <div class="stat-label">Revenue Generated</div>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Client Retention Rate</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Case Studies -->
+<section class="case-studies" style="padding: 6rem 0; background: var(--white);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Featured Case Studies</h2>
+            <p class="section-subtitle">In-depth looks at how we've transformed businesses across different industries with our AI-powered marketing solutions.</p>
+        </div>
+        
+        <div class="case-studies-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; margin-top: 3rem;">
+            <!-- Case Study 1 -->
+            <div class="case-study fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: var(--transition);" 
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-xl)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-lg)'">
+                <div class="case-image" style="height: 250px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 4rem;">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="case-content" style="padding: 2rem;">
+                    <div class="case-category" style="color: var(--primary-color); font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">E-commerce</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">TechGear Electronics</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.6;">A leading electronics retailer struggling with declining online sales and poor search visibility.</p>
+                    
+                    <div class="case-results" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="text-align: center; padding: 1rem; background: var(--gray-50); border-radius: 0.5rem;">
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--success-color);">300%</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Sales Increase</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: var(--gray-50); border-radius: 0.5rem;">
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--success-color);">250%</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Traffic Growth</div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-services" style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--gray-700);">Services Used:</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span style="background: var(--primary-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">SEO</span>
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">PPC</span>
+                            <span style="background: var(--accent-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Content</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Read Full Case Study</a>
+                </div>
+            </div>
+            
+            <!-- Case Study 2 -->
+            <div class="case-study fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: var(--transition);"
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-xl)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-lg)'">
+                <div class="case-image" style="height: 250px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 4rem;">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div class="case-content" style="padding: 2rem;">
+                    <div class="case-category" style="color: var(--primary-color); font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Healthcare</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">MedCare Clinic</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.6;">A local healthcare provider looking to increase patient appointments and improve online presence.</p>
+                    
+                    <div class="case-results" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="text-align: center; padding: 1rem; background: var(--gray-50); border-radius: 0.5rem;">
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--success-color);">180%</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Appointment Increase</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: var(--gray-50); border-radius: 0.5rem;">
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--success-color);">400%</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Lead Generation</div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-services" style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--gray-700);">Services Used:</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span style="background: var(--primary-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Local SEO</span>
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Social Media</span>
+                            <span style="background: var(--accent-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">PPC</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Read Full Case Study</a>
+                </div>
+            </div>
+            
+            <!-- Case Study 3 -->
+            <div class="case-study fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow-lg); overflow: hidden; transition: var(--transition);"
+                 onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-xl)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-lg)'">
+                <div class="case-image" style="height: 250px; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 4rem;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="case-content" style="padding: 2rem;">
+                    <div class="case-category" style="color: var(--primary-color); font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem;">Education</div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">EduTech Academy</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.6;">An online learning platform seeking to increase course enrollments and student engagement.</p>
+                    
+                    <div class="case-results" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="text-align: center; padding: 1rem; background: var(--gray-50); border-radius: 0.5rem;">
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--success-color);">220%</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Enrollment Growth</div>
+                        </div>
+                        <div style="text-align: center; padding: 1rem; background: var(--gray-50); border-radius: 0.5rem;">
+                            <div style="font-size: 1.5rem; font-weight: 800; color: var(--success-color);">350%</div>
+                            <div style="font-size: 0.875rem; color: var(--gray-600);">Email Subscribers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-services" style="margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--gray-700);">Services Used:</h4>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span style="background: var(--primary-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Content Marketing</span>
+                            <span style="background: var(--secondary-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Email Marketing</span>
+                            <span style="background: var(--accent-color); color: var(--white); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Social Media</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Read Full Case Study</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Industry Results Section -->
+<section class="industry-results" style="padding: 6rem 0; background: var(--gray-50);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Results by Industry</h2>
+            <p class="section-subtitle">See how we've helped businesses across different sectors achieve remarkable growth with our AI-powered marketing strategies.</p>
+        </div>
+        
+        <div class="industry-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="industry-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="industry-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">E-commerce</h3>
+                <div class="industry-stats" style="margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--success-color); margin-bottom: 0.5rem;">280%</div>
+                    <div style="color: var(--gray-600);">Average Sales Increase</div>
+                </div>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">Our AI-powered product recommendations and personalized campaigns drive higher conversion rates and customer lifetime value.</p>
+            </div>
+            
+            <div class="industry-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="industry-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Healthcare</h3>
+                <div class="industry-stats" style="margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--success-color); margin-bottom: 0.5rem;">190%</div>
+                    <div style="color: var(--gray-600);">Average Lead Increase</div>
+                </div>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">Local SEO and targeted campaigns help healthcare providers connect with patients and build trust in their communities.</p>
+            </div>
+            
+            <div class="industry-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="industry-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Education</h3>
+                <div class="industry-stats" style="margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--success-color); margin-bottom: 0.5rem;">240%</div>
+                    <div style="color: var(--gray-600);">Average Enrollment Growth</div>
+                </div>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">Content marketing and email automation help educational institutions reach and engage prospective students effectively.</p>
+            </div>
+            
+            <div class="industry-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="industry-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Professional Services</h3>
+                <div class="industry-stats" style="margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--success-color); margin-bottom: 0.5rem;">160%</div>
+                    <div style="color: var(--gray-600);">Average Client Acquisition</div>
+                </div>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">LinkedIn advertising and thought leadership content help professional services firms establish authority and attract high-value clients.</p>
+            </div>
+            
+            <div class="industry-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="industry-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Food & Beverage</h3>
+                <div class="industry-stats" style="margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--success-color); margin-bottom: 0.5rem;">320%</div>
+                    <div style="color: var(--gray-600);">Average Foot Traffic Increase</div>
+                </div>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">Social media marketing and local SEO help restaurants and food businesses attract customers and build community engagement.</p>
+            </div>
+            
+            <div class="industry-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="industry-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Real Estate</h3>
+                <div class="industry-stats" style="margin-bottom: 1.5rem;">
+                    <div style="font-size: 2rem; font-weight: 800; color: var(--success-color); margin-bottom: 0.5rem;">210%</div>
+                    <div style="color: var(--gray-600);">Average Lead Generation</div>
+                </div>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">Targeted Facebook ads and Google campaigns help real estate professionals generate qualified leads and close more deals.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Client Testimonials -->
+<section class="testimonials" style="padding: 6rem 0; background: var(--white);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Don't just take our word for it. Here's what our clients have to say about working with GO AI Marketing.</p>
+        </div>
+        
+        <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="testimonial fade-in-up" style="background: var(--gray-50); padding: 2rem; border-radius: 1rem; position: relative;">
+                <div class="quote-icon" style="position: absolute; top: 1rem; right: 1rem; color: var(--primary-color); font-size: 2rem; opacity: 0.3;">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p style="color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.6; font-style: italic;">"GO AI Marketing transformed our online presence completely. Our sales increased by 300% in just 6 months. Their AI-powered approach is truly revolutionary."</p>
+                <div class="testimonial-author" style="display: flex; align-items: center; gap: 1rem;">
+                    <div class="author-avatar" style="width: 50px; height: 50px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 600;">
+                        JS
+                    </div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--gray-900);">John Smith</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">CEO, TechGear Electronics</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial fade-in-up" style="background: var(--gray-50); padding: 2rem; border-radius: 1rem; position: relative;">
+                <div class="quote-icon" style="position: absolute; top: 1rem; right: 1rem; color: var(--primary-color); font-size: 2rem; opacity: 0.3;">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p style="color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.6; font-style: italic;">"The team's expertise in AI and marketing is unmatched. They helped us reach patients we never could have reached before. Highly recommended!"</p>
+                <div class="testimonial-author" style="display: flex; align-items: center; gap: 1rem;">
+                    <div class="author-avatar" style="width: 50px; height: 50px; background: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 600;">
+                        MR
+                    </div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--gray-900);">Dr. Maria Rodriguez</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Director, MedCare Clinic</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial fade-in-up" style="background: var(--gray-50); padding: 2rem; border-radius: 1rem; position: relative;">
+                <div class="quote-icon" style="position: absolute; top: 1rem; right: 1rem; color: var(--primary-color); font-size: 2rem; opacity: 0.3;">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <p style="color: var(--gray-700); margin-bottom: 1.5rem; line-height: 1.6; font-style: italic;">"Working with GO AI Marketing has been a game-changer for our business. Their data-driven approach and AI technology deliver results that exceed expectations."</p>
+                <div class="testimonial-author" style="display: flex; align-items: center; gap: 1rem;">
+                    <div class="author-avatar" style="width: 50px; height: 50px; background: var(--success-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-weight: 600;">
+                        AL
+                    </div>
+                    <div>
+                        <div style="font-weight: 600; color: var(--gray-900);">Alex Lee</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Founder, EduTech Academy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2 class="fade-in-up">Ready to Join Our Success Stories?</h2>
+        <p class="fade-in-up">Let's discuss how we can help your business achieve similar results. Get your free consultation and custom strategy today!</p>
+        <div class="cta-buttons fade-in-up">
+            <a href="{{ url_for('contact') }}" class="btn btn-white">
+                <i class="fas fa-calendar"></i>
+                Schedule Free Consultation
+            </a>
+            <a href="{{ url_for('services') }}" class="btn btn-outline-white">
+                <i class="fas fa-eye"></i>
+                View Our Services
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+
+
+

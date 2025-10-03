@@ -1,0 +1,258 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - AI Marketing Experts | GO AI Marketing Services{% endblock %}
+
+{% block meta_description %}Learn about GO AI Marketing Services - a team of expert marketers and AI specialists helping businesses grow with cutting-edge digital marketing solutions.{% endblock %}
+
+{% block meta_keywords %}about marketing agency, AI marketing experts, digital marketing team, marketing company story, marketing professionals{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero compact-hero">
+    <div class="hero-container">
+        <div class="hero-content fade-in-up">
+            <h1>Meet the Team Behind Your Success</h1>
+            <p>We're a passionate team of marketing experts, data scientists, and AI specialists dedicated to helping businesses achieve unprecedented growth through intelligent marketing solutions.</p>
+        </div>
+        <div class="hero-image fade-in-up">
+            <img src="{{ url_for('static', filename='images/Web-Designer-Pic.png') }}" alt="AI Marketing Team" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="our-story compact-section" style="background: var(--white);">
+    <div class="services-container">
+        <div class="story-content compact-grid" style="display: grid; grid-template-columns: 1fr 1fr; align-items: center;">
+            <div class="story-text fade-in-up">
+                <h2>Our Story</h2>
+                <p class="compact-text">
+                    Founded in 2019, GO AI Marketing Services was born from a simple belief: that artificial intelligence could revolutionize how businesses approach digital marketing. Our founders, having worked at top marketing agencies and tech companies, saw the potential for AI to deliver more personalized, efficient, and results-driven marketing campaigns.
+                </p>
+                <p class="compact-text">
+                    Today, we've helped over 500 businesses across various industries achieve an average 150% increase in ROI through our AI-powered marketing strategies. Our team combines deep marketing expertise with cutting-edge technology to deliver solutions that not only meet but exceed our clients' expectations.
+                </p>
+                <div class="story-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-color);">500+</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Clients Served</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-color);">5+</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Years Experience</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--primary-color);">150%</div>
+                        <div style="color: var(--gray-600); font-weight: 500;">Avg ROI Increase</div>
+                    </div>
+                </div>
+            </div>
+            <div class="story-image fade-in-up">
+                <img src="{{ url_for('static', filename='images/team-office.jpg') }}" alt="Our Team at Work" style="width: 100%; border-radius: 1rem; box-shadow: var(--shadow-xl);">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Values Section -->
+<section class="mission-values" style="padding: 6rem 0; background: var(--gray-50);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Our Mission & Values</h2>
+            <p class="section-subtitle">The principles that guide everything we do and drive our commitment to excellence.</p>
+        </div>
+        
+        <div class="values-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="value-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="value-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Results-Driven</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">We measure our success by your success. Every strategy, campaign, and decision is made with your business goals and ROI in mind.</p>
+            </div>
+            
+            <div class="value-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="value-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Innovation First</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">We stay at the forefront of marketing technology, constantly exploring new AI tools and strategies to give our clients a competitive advantage.</p>
+            </div>
+            
+            <div class="value-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="value-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Partnership</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">We believe in building long-term partnerships with our clients, working as an extension of your team to achieve shared success.</p>
+            </div>
+            
+            <div class="value-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="value-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Data-Driven</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">Every decision we make is backed by data and analytics. We use insights to optimize campaigns and ensure continuous improvement.</p>
+            </div>
+            
+            <div class="value-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="value-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Transparency</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">We believe in complete transparency in our processes, reporting, and communication. You'll always know exactly what we're doing and why.</p>
+            </div>
+            
+            <div class="value-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div class="value-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary-color), var(--success-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--white); font-size: 2rem;">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Continuous Learning</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">The marketing landscape evolves rapidly. We invest heavily in training and development to stay ahead of trends and technologies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section" style="padding: 6rem 0; background: var(--white);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Meet Our Expert Team</h2>
+            <p class="section-subtitle">Our diverse team of marketing professionals, data scientists, and AI specialists work together to deliver exceptional results.</p>
+        </div>
+        
+        <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="team-member fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center; transition: var(--transition);" 
+                 onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="member-photo" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gray-900);">Sarah Johnson</h3>
+                <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">CEO & Founder</p>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">15+ years in digital marketing. Former VP at top agencies. Expert in AI-driven marketing strategies and team leadership.</p>
+                <div class="member-social" style="margin-top: 1rem;">
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center; transition: var(--transition);"
+                 onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="member-photo" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gray-900);">Michael Chen</h3>
+                <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">Head of AI & Data Science</p>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">PhD in Machine Learning. Former Google AI researcher. Leads our AI algorithm development and optimization efforts.</p>
+                <div class="member-social" style="margin-top: 1rem;">
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center; transition: var(--transition);"
+                 onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="member-photo" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gray-900);">Emily Rodriguez</h3>
+                <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">Director of Marketing Operations</p>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">10+ years in campaign management. Expert in PPC, social media, and marketing automation. Oversees all client campaigns.</p>
+                <div class="member-social" style="margin-top: 1rem;">
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="team-member fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center; transition: var(--transition);"
+                 onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                 onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="member-photo" style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--gray-900);">David Kim</h3>
+                <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">Senior SEO Specialist</p>
+                <p style="color: var(--gray-600); font-size: 0.875rem; line-height: 1.5;">8+ years in SEO and content marketing. Expert in technical SEO, content strategy, and AI-powered optimization techniques.</p>
+                <div class="member-social" style="margin-top: 1rem;">
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color: var(--gray-400); margin: 0 0.5rem; font-size: 1.25rem;"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us" style="padding: 6rem 0; background: var(--gray-50);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Why Choose GO AI Marketing?</h2>
+            <p class="section-subtitle">We combine cutting-edge AI technology with proven marketing strategies to deliver exceptional results for your business.</p>
+        </div>
+        
+        <div class="why-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="why-item fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow);">
+                <div class="why-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Proprietary AI Technology</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">Our custom-built AI algorithms are specifically designed for marketing optimization, giving you a competitive edge that generic tools can't match.</p>
+            </div>
+            
+            <div class="why-item fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow);">
+                <div class="why-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Proven Track Record</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">With 500+ successful campaigns and an average 150% ROI increase, our results speak for themselves. We deliver measurable growth for every client.</p>
+            </div>
+            
+            <div class="why-item fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow);">
+                <div class="why-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Dedicated Support</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">Our dedicated account managers and 24/7 AI monitoring ensure your campaigns run smoothly around the clock with immediate issue resolution.</p>
+            </div>
+            
+            <div class="why-item fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow);">
+                <div class="why-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Rapid Implementation</h3>
+                <p style="color: var(--gray-600); line-height: 1.6;">Our streamlined processes and AI automation allow us to launch campaigns quickly and efficiently, getting you results faster than traditional agencies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2 class="fade-in-up">Ready to Work With Us?</h2>
+        <p class="fade-in-up">Join the hundreds of businesses that trust GO AI Marketing to drive their growth. Let's discuss how we can help you achieve your goals.</p>
+        <div class="cta-buttons fade-in-up">
+            <a href="{{ url_for('contact') }}" class="btn btn-white">
+                <i class="fas fa-calendar"></i>
+                Schedule Free Consultation
+            </a>
+            <a href="{{ url_for('services') }}" class="btn btn-outline-white">
+                <i class="fas fa-eye"></i>
+                View Our Services
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+
+
+

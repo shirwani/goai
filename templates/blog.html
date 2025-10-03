@@ -1,0 +1,312 @@
+{% extends "base.html" %}
+
+{% block title %}Marketing Blog - AI Marketing Insights & Tips | GO AI Marketing{% endblock %}
+
+{% block meta_description %}Stay updated with the latest AI marketing trends, tips, and insights. Expert advice on SEO, PPC, social media, and digital marketing strategies.{% endblock %}
+
+{% block meta_keywords %}marketing blog, AI marketing tips, digital marketing insights, SEO advice, PPC strategies, marketing trends{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero compact-hero">
+    <div class="hero-container">
+        <div class="hero-content fade-in-up">
+            <h1>Marketing Insights & AI Tips</h1>
+            <p>Stay ahead of the curve with expert insights, industry trends, and actionable tips from our team of AI marketing specialists. Learn how to leverage technology for better results.</p>
+        </div>
+        <div class="hero-image fade-in-up">
+            <img src="{{ url_for('static', filename='images/mobile-app-development-1024x512.jpeg') }}" alt="AI Marketing Blog" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Featured Article -->
+<section class="featured-article" style="padding: 2rem 0; background: var(--white);">
+    <div class="services-container">
+        <div class="featured-content fade-in-up" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); color: var(--white); padding: 3rem; border-radius: 1rem; position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: rgba(255,255,255,0.1); border-radius: 50%;"></div>
+            <div style="position: absolute; bottom: -100px; left: -100px; width: 300px; height: 300px; background: rgba(255,255,255,0.05); border-radius: 50%;"></div>
+            <div style="position: relative; z-index: 1;">
+                <div style="background: rgba(255,255,255,0.2); color: var(--white); padding: 0.5rem 1rem; border-radius: 1rem; display: inline-block; margin-bottom: 1rem; font-size: 0.875rem; font-weight: 600;">
+                    Featured Article
+                </div>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--white);">The Future of AI in Digital Marketing: 2024 Trends</h2>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9; line-height: 1.6;">Discover how artificial intelligence is revolutionizing digital marketing and what trends you need to watch in 2024. Learn practical strategies to implement AI in your campaigns.</p>
+                <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-calendar"></i>
+                        <span>December 15, 2024</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-clock"></i>
+                        <span>8 min read</span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-user"></i>
+                        <span>Sarah Johnson</span>
+                    </div>
+                </div>
+                <a href="{{ url_for('blog_article', slug='ai-future-marketing-2024') }}" class="btn" style="background: var(--white); color: var(--primary-color); padding: 1rem 2rem; border-radius: 2rem; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: var(--transition);" 
+                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='var(--shadow-lg)'"
+                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                    Read Full Article
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Categories -->
+<section class="blog-categories" style="padding: 2rem 0; background: var(--gray-50);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Browse by Category</h2>
+            <p class="section-subtitle">Find articles tailored to your specific marketing needs and interests.</p>
+        </div>
+        
+        <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+            <div class="category-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3 style="color: var(--gray-900); margin-bottom: 0.5rem;">SEO & Content</h3>
+                <p style="color: var(--gray-600); font-size: 0.875rem;">15 articles</p>
+            </div>
+            
+            <div class="category-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3 style="color: var(--gray-900); margin-bottom: 0.5rem;">PPC & Advertising</h3>
+                <p style="color: var(--gray-600); font-size: 0.875rem;">12 articles</p>
+            </div>
+            
+            <div class="category-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3 style="color: var(--gray-900); margin-bottom: 0.5rem;">Social Media</h3>
+                <p style="color: var(--gray-600); font-size: 0.875rem;">18 articles</p>
+            </div>
+            
+            <div class="category-card fade-in-up" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow); text-align: center;">
+                <div style="width: 60px; height: 60px; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: var(--white); font-size: 1.5rem;">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3 style="color: var(--gray-900); margin-bottom: 0.5rem;">AI & Technology</h3>
+                <p style="color: var(--gray-600); font-size: 0.875rem;">22 articles</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Articles -->
+<section class="recent-articles" style="padding: 3rem 0; background: var(--white);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">Stay updated with our latest insights, tips, and strategies for AI-powered marketing success.</p>
+        </div>
+        
+        <div class="articles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 2rem;">
+            <!-- Article 1 -->
+            <article class="article-card fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; transition: var(--transition);"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="article-image" style="height: 200px; background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="article-content" style="padding: 1.5rem;">
+                    <div class="article-meta" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--gray-500);">
+                        <span><i class="fas fa-calendar"></i> Dec 12, 2024</span>
+                        <span><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--gray-900); line-height: 1.4;">How to Use AI for Better PPC Campaign Optimization</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.5; font-size: 0.875rem;">Discover practical strategies for leveraging artificial intelligence to optimize your pay-per-click campaigns and maximize ROI.</p>
+                    <div class="article-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">PPC</span>
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">AI</span>
+                    </div>
+                    <a href="{{ url_for('blog_article', slug='ai-ppc-optimization') }}" style="color: var(--primary-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Article 2 -->
+            <article class="article-card fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; transition: var(--transition);"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="article-image" style="height: 200px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="article-content" style="padding: 1.5rem;">
+                    <div class="article-meta" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--gray-500);">
+                        <span><i class="fas fa-calendar"></i> Dec 10, 2024</span>
+                        <span><i class="fas fa-clock"></i> 7 min read</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--gray-900); line-height: 1.4;">Building Effective Social Media Strategies with AI</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.5; font-size: 0.875rem;">Learn how to create engaging social media content and optimize posting schedules using AI-powered tools and insights.</p>
+                    <div class="article-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Social Media</span>
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Strategy</span>
+                    </div>
+                    <a href="{{ url_for('blog_article', slug='ai-social-media-strategies') }}" style="color: var(--primary-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Article 3 -->
+            <article class="article-card fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; transition: var(--transition);"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="article-image" style="height: 200px; background: linear-gradient(135deg, var(--success-color), var(--secondary-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="article-content" style="padding: 1.5rem;">
+                    <div class="article-meta" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--gray-500);">
+                        <span><i class="fas fa-calendar"></i> Dec 8, 2024</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--gray-900); line-height: 1.4;">Email Marketing Automation: Best Practices for 2024</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.5; font-size: 0.875rem;">Master the art of email marketing automation with these proven strategies and AI-powered personalization techniques.</p>
+                    <div class="article-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Email Marketing</span>
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Automation</span>
+                    </div>
+                    <a href="{{ url_for('blog_article', slug='email-marketing-automation-2024') }}" style="color: var(--primary-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Article 4 -->
+            <article class="article-card fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; transition: var(--transition);"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="article-image" style="height: 200px; background: linear-gradient(135deg, var(--accent-color), var(--primary-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="article-content" style="padding: 1.5rem;">
+                    <div class="article-meta" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--gray-500);">
+                        <span><i class="fas fa-calendar"></i> Dec 5, 2024</span>
+                        <span><i class="fas fa-clock"></i> 9 min read</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--gray-900); line-height: 1.4;">The Complete Guide to AI-Powered SEO in 2024</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.5; font-size: 0.875rem;">Everything you need to know about implementing AI in your SEO strategy, from keyword research to content optimization.</p>
+                    <div class="article-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">SEO</span>
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">AI</span>
+                    </div>
+                    <a href="{{ url_for('blog_article', slug='ai-powered-seo-guide-2024') }}" style="color: var(--primary-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Article 5 -->
+            <article class="article-card fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; transition: var(--transition);"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="article-image" style="height: 200px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <div class="article-content" style="padding: 1.5rem;">
+                    <div class="article-meta" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--gray-500);">
+                        <span><i class="fas fa-calendar"></i> Dec 3, 2024</span>
+                        <span><i class="fas fa-clock"></i> 4 min read</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--gray-900); line-height: 1.4;">Measuring Marketing ROI: Key Metrics to Track</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.5; font-size: 0.875rem;">Learn which metrics matter most for measuring your marketing success and how to calculate true ROI.</p>
+                    <div class="article-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Analytics</span>
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">ROI</span>
+                    </div>
+                    <a href="{{ url_for('blog_article', slug='marketing-roi-metrics') }}" style="color: var(--primary-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+            
+            <!-- Article 6 -->
+            <article class="article-card fade-in-up" style="background: var(--white); border-radius: 1rem; box-shadow: var(--shadow); overflow: hidden; transition: var(--transition);"
+                     onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-lg)'"
+                     onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow)'">
+                <div class="article-image" style="height: 200px; background: linear-gradient(135deg, var(--secondary-color), var(--accent-color)); display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 3rem;">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="article-content" style="padding: 1.5rem;">
+                    <div class="article-meta" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; font-size: 0.875rem; color: var(--gray-500);">
+                        <span><i class="fas fa-calendar"></i> Dec 1, 2024</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                    <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--gray-900); line-height: 1.4;">Mobile-First Marketing: Optimizing for Mobile Users</h3>
+                    <p style="color: var(--gray-600); margin-bottom: 1rem; line-height: 1.5; font-size: 0.875rem;">With mobile traffic dominating, learn how to optimize your marketing strategies for mobile-first experiences.</p>
+                    <div class="article-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Mobile</span>
+                        <span style="background: var(--gray-100); color: var(--gray-600); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Optimization</span>
+                    </div>
+                    <a href="{{ url_for('blog_article', slug='mobile-first-marketing') }}" style="color: var(--primary-color); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="{{ url_for('blog') }}" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.125rem;">
+                View All Articles
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="newsletter-signup" style="padding: 3rem 0; background: var(--gray-50);">
+    <div class="services-container">
+        <div class="newsletter-content fade-in-up" style="background: var(--white); padding: 3rem; border-radius: 1rem; box-shadow: var(--shadow-lg); text-align: center;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--gray-900);">Stay Updated with Our Newsletter</h2>
+            <p style="font-size: 1.125rem; color: var(--gray-600); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">Get the latest AI marketing insights, tips, and industry trends delivered straight to your inbox. Join 10,000+ marketers who trust our expertise.</p>
+            
+            <form class="newsletter-form" style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+                <input type="email" placeholder="Enter your email address" required 
+                       style="flex: 1; min-width: 250px; padding: 1rem; border: 2px solid var(--gray-200); border-radius: 0.5rem; font-size: 1rem;"
+                       onfocus="this.style.borderColor='var(--primary-color)'" 
+                       onblur="this.style.borderColor='var(--gray-200)'">
+                <button type="submit" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1rem; white-space: nowrap;">
+                    Subscribe
+                </button>
+            </form>
+            
+            <p style="font-size: 0.875rem; color: var(--gray-500); margin-top: 1rem;">No spam, unsubscribe at any time. We respect your privacy.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2 class="fade-in-up">Ready to Implement These Strategies?</h2>
+        <p class="fade-in-up">Let our AI marketing experts help you implement these strategies and achieve better results for your business.</p>
+        <div class="cta-buttons fade-in-up">
+            <a href="{{ url_for('contact') }}" class="btn btn-white">
+                <i class="fas fa-calendar"></i>
+                Get Free Consultation
+            </a>
+            <a href="{{ url_for('services') }}" class="btn btn-outline-white">
+                <i class="fas fa-eye"></i>
+                View Our Services
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+

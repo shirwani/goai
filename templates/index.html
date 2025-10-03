@@ -1,0 +1,223 @@
+{% extends "base.html" %}
+
+{% block title %}GO AI Marketing Services - AI-Powered Digital Marketing Solutions{% endblock %}
+
+{% block meta_description %}Transform your business with GO AI Marketing Services. Expert AI-powered digital marketing including SEO, PPC, Social Media, Content Marketing, and Marketing Automation. Get results that matter.{% endblock %}
+
+{% block meta_keywords %}AI marketing, digital marketing agency, SEO services, PPC advertising, social media marketing, content marketing, marketing automation, lead generation{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content fade-in-up">
+            <h1>Transform Your Business with AI-Powered Marketing</h1>
+            <p>We help businesses grow faster and smarter using cutting-edge AI technology. Our data-driven approach delivers measurable results that drive real business growth.</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Get Started Today
+                </a>
+                <a href="{{ url_for('services') }}" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    View Our Services
+                </a>
+            </div>
+        </div>
+        <div class="hero-image fade-in-up">
+            <img src="{{ url_for('static', filename='images/0_tQQ7SLPOJfxaG4ZY-1024x683.jpg') }}" alt="AI Marketing Solutions" loading="lazy">
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="stats-container">
+        <div class="stats-grid">
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">150%</div>
+                <div class="stat-label">Average ROI Increase</div>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">AI-Powered Monitoring</div>
+            </div>
+            <div class="stat-item fade-in-up">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Our AI-Powered Services</h2>
+            <p class="section-subtitle">Leverage the power of artificial intelligence to supercharge your marketing efforts and achieve unprecedented growth.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in-up" id="seo">
+                <div class="service-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>AI-Enhanced SEO</h3>
+                <p>Our advanced AI algorithms analyze search patterns, competitor strategies, and user behavior to optimize your website for maximum visibility and organic traffic growth.</p>
+                <ul class="service-features">
+                    <li>Keyword research & analysis</li>
+                    <li>Technical SEO optimization</li>
+                    <li>Content optimization with AI</li>
+                    <li>Local SEO strategies</li>
+                    <li>Performance tracking & reporting</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="service-card fade-in-up" id="ppc">
+                <div class="service-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <h3>Smart PPC Advertising</h3>
+                <p>Maximize your advertising ROI with AI-driven campaign optimization, automated bidding, and intelligent audience targeting across all major platforms.</p>
+                <ul class="service-features">
+                    <li>Google Ads optimization</li>
+                    <li>Facebook & Instagram ads</li>
+                    <li>LinkedIn advertising</li>
+                    <li>Automated bidding strategies</li>
+                    <li>Conversion tracking & analysis</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="service-card fade-in-up" id="social">
+                <div class="service-icon">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <h3>Social Media Marketing</h3>
+                <p>Build a strong social presence with AI-powered content creation, optimal posting schedules, and automated engagement strategies that drive real results.</p>
+                <ul class="service-features">
+                    <li>Content strategy & creation</li>
+                    <li>Community management</li>
+                    <li>Influencer partnerships</li>
+                    <li>Social media advertising</li>
+                    <li>Analytics & performance tracking</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="service-card fade-in-up" id="content">
+                <div class="service-icon">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <h3>Content Marketing</h3>
+                <p>Create compelling, SEO-optimized content at scale using AI tools that understand your audience and deliver the right message at the right time.</p>
+                <ul class="service-features">
+                    <li>Blog content creation</li>
+                    <li>Video marketing</li>
+                    <li>Email marketing campaigns</li>
+                    <li>Content calendar management</li>
+                    <li>Performance analytics</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="service-card fade-in-up" id="email">
+                <div class="service-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Marketing Automation</h3>
+                <p>Nurture leads and retain customers with intelligent email sequences that adapt to user behavior and deliver personalized experiences.</p>
+                <ul class="service-features">
+                    <li>Automated email sequences</li>
+                    <li>Personalization at scale</li>
+                    <li>A/B testing & optimization</li>
+                    <li>Lead nurturing campaigns</li>
+                    <li>Advanced segmentation</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Learn More</a>
+            </div>
+            
+            <div class="service-card fade-in-up" id="analytics">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Marketing Analytics & AI Insights</h3>
+                <p>Make data-driven decisions with comprehensive analytics and AI-powered insights that reveal opportunities and optimize your marketing performance.</p>
+                <ul class="service-features">
+                    <li>Advanced analytics setup</li>
+                    <li>Custom reporting dashboards</li>
+                    <li>AI-powered insights</li>
+                    <li>ROI tracking & attribution</li>
+                    <li>Competitive analysis</li>
+                </ul>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us" style="padding: 3rem 0; background: var(--white);">
+    <div class="services-container">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Why Choose GO AI Marketing?</h2>
+            <p class="section-subtitle">We combine cutting-edge AI technology with proven marketing strategies to deliver exceptional results for your business.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card fade-in-up">
+                <div class="service-icon" style="background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI-Powered Intelligence</h3>
+                <p>Our proprietary AI algorithms continuously learn and adapt to market changes, ensuring your campaigns stay ahead of the competition.</p>
+            </div>
+            
+            <div class="service-card fade-in-up">
+                <div class="service-icon" style="background: linear-gradient(135deg, var(--success-color), var(--secondary-color));">
+                    <i class="fas fa-chart-bar"></i>
+                </div>
+                <h3>Proven Results</h3>
+                <p>We've helped 500+ businesses achieve an average 150% increase in ROI through our data-driven marketing strategies.</p>
+            </div>
+            
+            <div class="service-card fade-in-up">
+                <div class="service-icon" style="background: linear-gradient(135deg, var(--accent-color), var(--primary-color));">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated team and AI monitoring systems ensure your campaigns run smoothly around the clock with immediate issue resolution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-container">
+        <h2 class="fade-in-up">Ready to Transform Your Marketing?</h2>
+        <p class="fade-in-up">Join hundreds of successful businesses that trust GO AI Marketing to drive their growth. Get your free consultation today!</p>
+        <div class="cta-buttons fade-in-up">
+            <a href="{{ url_for('contact') }}" class="btn btn-white">
+                <i class="fas fa-calendar"></i>
+                Schedule Free Consultation
+            </a>
+            <a href="tel:+12816709840" class="btn btn-outline-white">
+                <i class="fas fa-phone"></i>
+                Call +1 (281) 670-9840
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
