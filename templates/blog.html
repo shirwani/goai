@@ -8,8 +8,12 @@
 
 {% block content %}
 <!-- Hero Content -->
-<div class="hero-content" style="padding: var(--spacing-12) 0; background: linear-gradient(135deg, rgba(128, 128, 128, 0.2) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(128, 128, 128, 0.2) 100%), url('static/images/ai-hero.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; overflow: hidden; z-index: 10; opacity: 0.8;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-4); display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-16); align-items: center; position: relative; z-index: 1;">
+<div style="padding: var(--spacing-12) 0; background: linear-gradient(135deg, rgba(128, 128, 128, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(128, 128, 128, 0.1) 100%), url('static/images/ai-hero.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; overflow: hidden; z-index: 1;">
+    <!-- Background layer with low opacity -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, rgba(128, 128, 128, 0.1) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(128, 128, 128, 0.1) 100%); z-index: 1;"></div>
+    
+    <!-- Content layer with high opacity -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-4); display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-16); align-items: center; position: relative; z-index: 2; opacity: 1;">
         <div class="hero-content fade-in-up">
             <h1 style="font-size: var(--font-size-6xl); font-weight: 800; line-height: 1.1; margin-bottom: var(--spacing-6); color: var(--white); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">Marketing Insights & AI Tips</h1>
             <p style="font-size: var(--font-size-xl); color: var(--white); margin-bottom: var(--spacing-8); line-height: 1.6; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); font-weight: 500;">Stay ahead of the curve with expert insights, industry trends, and actionable tips from our team of AI marketing specialists. Learn how to leverage technology for better results.</p>
