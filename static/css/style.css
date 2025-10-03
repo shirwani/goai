@@ -424,8 +424,9 @@ a:hover {
     box-shadow: var(--shadow-xl);
 }
 
-/* Larger hero images for contact and portfolio pages */
-.compact-hero .hero-image img {
+/* Larger hero images for contact and portfolio pages only */
+.contact .compact-hero .hero-image img,
+.portfolio .compact-hero .hero-image img {
     max-width: 400%;
     height: auto;
     border-radius: var(--radius-2xl);
