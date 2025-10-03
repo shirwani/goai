@@ -426,8 +426,8 @@ a:hover {
 
 /* Consistent hero image sizing for all pages */
 .hero-image img {
-    max-width: 150% !important;
-    width: 150% !important;
+    max-width: 125% !important;
+    width: 125% !important;
     height: auto !important;
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-xl);
