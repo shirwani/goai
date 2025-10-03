@@ -239,6 +239,11 @@ a:hover {
     width: auto;
 }
 
+.footer-logo {
+    height: 100px;
+    width: auto;
+}
+
 .nav-menu {
     display: flex;
     align-items: center;
