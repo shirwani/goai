@@ -6,19 +6,23 @@
 
 {% block meta_keywords %}AI digital marketing services, SEO optimization, PPC advertising, social media marketing, content marketing, email automation, marketing analytics, digital marketing agency, AI marketing solutions{% endblock %}
 
-{% block extra_head %}
-<!-- Services Structured Data -->
+{% block structured_data %}
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": "AI-Powered Digital Marketing Services",
-    "description": "Comprehensive AI-powered digital marketing services including SEO, PPC, Social Media, Content Marketing, and Marketing Automation",
+    "description": "Professional AI-powered digital marketing services including SEO optimization, PPC advertising, social media management, content marketing, and marketing automation.",
     "provider": {
         "@type": "Organization",
-        "name": "GO AI Marketing Services",
-        "url": "{{ request.url_root }}",
-        "logo": "{{ url_for('static', filename='images/GoAI_Logo__1_-removebg-preview.png', _external=True) }}"
+        "name": "GO AI Marketing",
+        "url": "https://goaimarketingservices.com",
+        "logo": "https://goaimarketingservices.com/static/images/logo.jpeg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-281-670-9840",
+            "contactType": "customer service"
+        }
     },
     "serviceType": "Digital Marketing",
     "areaServed": "United States",
@@ -30,24 +34,24 @@
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "AI-Enhanced SEO Services",
-                    "description": "Advanced SEO optimization using AI algorithms for maximum visibility and organic traffic growth"
+                    "name": "AI-Powered SEO Optimization",
+                    "description": "Boost search visibility with intelligent optimization"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Smart PPC Advertising",
-                    "description": "AI-driven PPC campaign optimization across Google Ads, Facebook, Instagram, and LinkedIn"
+                    "name": "Social Media Management",
+                    "description": "Maximize engagement with AI-driven automation"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Social Media Marketing",
-                    "description": "AI-powered social media management and content creation across all major platforms"
+                    "name": "PPC Advertising",
+                    "description": "Maximize ROI with intelligent ad campaigns"
                 }
             },
             {
@@ -55,23 +59,15 @@
                 "itemOffered": {
                     "@type": "Service",
                     "name": "Content Marketing",
-                    "description": "SEO-optimized content creation and strategy using AI tools for maximum engagement"
+                    "description": "Engaging content that drives conversions"
                 }
             },
             {
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "Marketing Automation",
-                    "description": "Intelligent automation for lead nurturing, customer engagement, and conversion optimization"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Marketing Analytics & AI Insights",
-                    "description": "Advanced analytics and AI-powered insights for data-driven marketing decisions"
+                    "name": "Website Development",
+                    "description": "Modern, responsive websites that convert"
                 }
             }
         ]
@@ -98,570 +94,163 @@
     </div>
 </div>
 
-<!-- Detailed Services Section -->
-<section class="services">
-    <div class="services-container">
-        <div class="section-header fade-in-up">
-            <h2 class="section-title">Our AI-Powered Solutions</h2>
-            <p class="section-subtitle">Transform your brand with AI-driven marketing solutions that drive real results. Boost engagement, build credibility, and drive growth with our comprehensive suite of services.</p>
+<!-- Services Table Section -->
+<section class="services" style="padding: 3rem 0; background: var(--white);">
+    <div class="services-container" style="max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+        <div class="section-header fade-in-up" style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; color: var(--gray-900);">Our AI-Powered Solutions</h2>
+            <p class="section-subtitle" style="font-size: 1.1rem; color: var(--gray-600); max-width: 600px; margin: 0 auto;">Transform your brand with AI-driven marketing solutions that drive real results.</p>
         </div>
         
-        <!-- AI-Powered SEO Optimization -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <h3>AI-Powered SEO Optimization</h3>
-                    <p class="service-description">Boost your search engine visibility with intelligent SEO tools designed to increase organic traffic and drive business growth. Our AI-driven approach analyzes search patterns and optimizes your content for maximum visibility.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>Technical SEO</h4>
-                            <ul>
-                                <li>Website speed optimization</li>
-                                <li>Mobile-first indexing</li>
-                                <li>Core Web Vitals improvement</li>
-                                <li>Schema markup implementation</li>
-                                <li>Site architecture optimization</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Content Optimization</h4>
-                            <ul>
-                                <li>AI-powered keyword research</li>
-                                <li>Content gap analysis</li>
-                                <li>Topic clustering strategies</li>
-                                <li>Semantic SEO optimization</li>
-                                <li>Content performance tracking</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Local SEO</h4>
-                            <ul>
-                                <li>Google My Business optimization</li>
-                                <li>Local citation management</li>
-                                <li>Location-based content</li>
-                                <li>Review management</li>
-                                <li>Local link building</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$2,500/month</span>
+        <!-- Services Table -->
+        <div class="services-table" style="background: var(--white); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
+            <div class="table-header" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-light)); color: var(--white); padding: 1.5rem; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; font-weight: 600;">
+                <div>Service</div>
+                <div>Features</div>
+                <div>Pricing</div>
+                <div>Action</div>
+            </div>
+            
+            <!-- SEO Service Row -->
+            <div class="service-row" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--gray-200);">
+                <div class="service-info" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="{{ url_for('static', filename='images/seo.jpeg') }}" alt="SEO Services" style="width: 60px; height: 60px; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">AI-Powered SEO</h3>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">Boost search visibility with intelligent optimization</p>
                     </div>
                 </div>
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/seo.jpeg') }}" alt="AI-Enhanced SEO Services" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
+                <div class="service-features" style="font-size: 0.9rem; color: var(--gray-700);">
+                    <div>• Technical SEO</div>
+                    <div>• Content Optimization</div>
+                    <div>• Local SEO</div>
+                </div>
+                <div class="service-pricing" style="font-weight: 600; color: var(--primary-color);">
+                    $2,500/month
+                </div>
+                <div class="service-action">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Social Media Service Row -->
+            <div class="service-row" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--gray-200);">
+                <div class="service-info" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="{{ url_for('static', filename='images/social_media.jpeg') }}" alt="Social Media" style="width: 60px; height: 60px; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">Social Media Management</h3>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">Maximize engagement with AI-driven automation</p>
+                    </div>
+                </div>
+                <div class="service-features" style="font-size: 0.9rem; color: var(--gray-700);">
+                    <div>• Content Creation</div>
+                    <div>• Community Management</div>
+                    <div>• Performance Analytics</div>
+                </div>
+                <div class="service-pricing" style="font-weight: 600; color: var(--primary-color);">
+                    $1,500/month
+                </div>
+                <div class="service-action">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Analytics Service Row -->
+            <div class="service-row" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--gray-200);">
+                <div class="service-info" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="{{ url_for('static', filename='images/insights.jpeg') }}" alt="Analytics" style="width: 60px; height: 60px; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">Marketing Analytics</h3>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">Data-driven insights for optimized campaigns</p>
+                    </div>
+                </div>
+                <div class="service-features" style="font-size: 0.9rem; color: var(--gray-700);">
+                    <div>• Performance Tracking</div>
+                    <div>• ROI Analysis</div>
+                    <div>• Predictive Analytics</div>
+                </div>
+                <div class="service-pricing" style="font-weight: 600; color: var(--primary-color);">
+                    $2,000/month
+                </div>
+                <div class="service-action">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- PPC Service Row -->
+            <div class="service-row" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--gray-200);">
+                <div class="service-info" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="{{ url_for('static', filename='images/ai_seo.jpeg') }}" alt="PPC Advertising" style="width: 60px; height: 60px; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">PPC Advertising</h3>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">Maximize ROI with intelligent ad campaigns</p>
+                    </div>
+                </div>
+                <div class="service-features" style="font-size: 0.9rem; color: var(--gray-700);">
+                    <div>• Google Ads</div>
+                    <div>• Social Media Ads</div>
+                    <div>• Campaign Optimization</div>
+                </div>
+                <div class="service-pricing" style="font-weight: 600; color: var(--primary-color);">
+                    $1,800/month
+                </div>
+                <div class="service-action">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Content Marketing Service Row -->
+            <div class="service-row" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--gray-200);">
+                <div class="service-info" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="{{ url_for('static', filename='images/mobile.jpeg') }}" alt="Content Marketing" style="width: 60px; height: 60px; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">Content Marketing</h3>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">Engaging content that drives conversions</p>
+                    </div>
+                </div>
+                <div class="service-features" style="font-size: 0.9rem; color: var(--gray-700);">
+                    <div>• Blog Writing</div>
+                    <div>• Video Content</div>
+                    <div>• Email Campaigns</div>
+                </div>
+                <div class="service-pricing" style="font-weight: 600; color: var(--primary-color);">
+                    $1,200/month
+                </div>
+                <div class="service-action">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
+                </div>
+            </div>
+            
+            <!-- Website Development Service Row -->
+            <div class="service-row" style="display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1rem; align-items: center; padding: 1.5rem;">
+                <div class="service-info" style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="{{ url_for('static', filename='images/code.jpeg') }}" alt="Web Development" style="width: 60px; height: 60px; border-radius: 0.5rem; object-fit: cover;">
+                    <div>
+                        <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: var(--gray-900);">Website Development</h3>
+                        <p style="font-size: 0.9rem; color: var(--gray-600); margin: 0;">Modern, responsive websites that convert</p>
+                    </div>
+                </div>
+                <div class="service-features" style="font-size: 0.9rem; color: var(--gray-700);">
+                    <div>• Responsive Design</div>
+                    <div>• E-commerce Solutions</div>
+                    <div>• Performance Optimization</div>
+                </div>
+                <div class="service-pricing" style="font-weight: 600; color: var(--primary-color);">
+                    $3,000/project
+                </div>
+                <div class="service-action">
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
                 </div>
             </div>
         </div>
         
-        <!-- Social Media Management -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/social_media.jpeg') }}" alt="Social Media Management" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
-                </div>
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-share-alt"></i>
-                    </div>
-                    <h3>Social Media Management</h3>
-                    <p class="service-description">Maximize engagement and streamline content management with our AI-driven social media automation tools. Build credibility and drive growth across all major social platforms.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>Google Ads</h4>
-                            <ul>
-                                <li>Search campaign optimization</li>
-                                <li>Display network advertising</li>
-                                <li>YouTube video ads</li>
-                                <li>Shopping campaigns</li>
-                                <li>Smart bidding strategies</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Social Media Advertising</h4>
-                            <ul>
-                                <li>Facebook & Instagram ads</li>
-                                <li>LinkedIn advertising</li>
-                                <li>Twitter promoted content</li>
-                                <li>TikTok advertising</li>
-                                <li>Cross-platform optimization</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Campaign Management</h4>
-                            <ul>
-                                <li>Automated bid management</li>
-                                <li>A/B testing & optimization</li>
-                                <li>Audience targeting</li>
-                                <li>Conversion tracking</li>
-                                <li>Performance reporting</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$1,500/month + ad spend</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Data-Driven Marketing Analytics -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Data-Driven Marketing Analytics</h3>
-                    <p class="service-description">Leverage advanced analytics for data-driven decision-making, optimized campaigns, and measurable ROI. Transform your marketing with intelligent insights that drive real business growth.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>Content Strategy</h4>
-                            <ul>
-                                <li>AI content ideation</li>
-                                <li>Visual content creation</li>
-                                <li>Video marketing</li>
-                                <li>Story campaigns</li>
-                                <li>User-generated content</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Community Management</h4>
-                            <ul>
-                                <li>24/7 social monitoring</li>
-                                <li>Automated responses</li>
-                                <li>Engagement optimization</li>
-                                <li>Crisis management</li>
-                                <li>Influencer partnerships</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Platform Management</h4>
-                            <ul>
-                                <li>Facebook & Instagram</li>
-                                <li>LinkedIn & Twitter</li>
-                                <li>TikTok & YouTube</li>
-                                <li>Pinterest & Snapchat</li>
-                                <li>Cross-platform analytics</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$1,800/month</span>
-                    </div>
-                </div>
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/insights.jpeg') }}" alt="Data-Driven Marketing Analytics" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
-                </div>
-            </div>
-        </div>
-        
-        <!-- Website Development -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/code.jpeg') }}" alt="Website Development" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
-                </div>
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Website Development</h3>
-                    <p class="service-description">Create a powerful online presence with custom-designed, SEO-friendly websites that engage and convert visitors. Elevate your online presence with AI-powered development solutions tailored to your business goals.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>Content Creation</h4>
-                            <ul>
-                                <li>Blog posts & articles</li>
-                                <li>Video scripts & production</li>
-                                <li>Infographics & visuals</li>
-                                <li>Podcast content</li>
-                                <li>E-books & whitepapers</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Content Strategy</h4>
-                            <ul>
-                                <li>Editorial calendar</li>
-                                <li>Topic research & planning</li>
-                                <li>Content distribution</li>
-                                <li>SEO optimization</li>
-                                <li>Performance tracking</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Email Marketing</h4>
-                            <ul>
-                                <li>Newsletter campaigns</li>
-                                <li>Automated sequences</li>
-                                <li>Personalization</li>
-                                <li>Segmentation</li>
-                                <li>Deliverability optimization</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$2,000/month</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mobile Application Development -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Mobile Application Development</h3>
-                    <p class="service-description">Deliver seamless user experiences with innovative mobile apps designed to enhance engagement and accessibility. Amplify your brand impact with data-driven mobile solutions.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>Lead Nurturing</h4>
-                            <ul>
-                                <li>Automated email sequences</li>
-                                <li>Behavioral triggers</li>
-                                <li>Lead scoring</li>
-                                <li>CRM integration</li>
-                                <li>Sales handoff automation</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Customer Engagement</h4>
-                            <ul>
-                                <li>Welcome series</li>
-                                <li>Re-engagement campaigns</li>
-                                <li>Upsell & cross-sell</li>
-                                <li>Retention programs</li>
-                                <li>Loyalty rewards</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Analytics & Optimization</h4>
-                            <ul>
-                                <li>Campaign performance tracking</li>
-                                <li>A/B testing automation</li>
-                                <li>ROI measurement</li>
-                                <li>Predictive analytics</li>
-                                <li>Continuous optimization</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$1,200/month</span>
-                    </div>
-                </div>
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/mobile.jpeg') }}" alt="Marketing Automation" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
-                </div>
-            </div>
-        </div>
-        
-        <!-- Reputation Management -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/reputation.jpeg') }}" alt="Reputation Management" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
-                </div>
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Reputation Management</h3>
-                    <p class="service-description">Build trust and credibility with strategic reputation management, online reviews, and brand monitoring. Dominate the competition with precision-targeted reputation solutions.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>Advanced Analytics</h4>
-                            <ul>
-                                <li>Custom dashboard creation</li>
-                                <li>Multi-channel attribution</li>
-                                <li>Customer journey mapping</li>
-                                <li>Conversion tracking</li>
-                                <li>Real-time reporting</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>AI-Powered Insights</h4>
-                            <ul>
-                                <li>Predictive analytics</li>
-                                <li>Trend identification</li>
-                                <li>Anomaly detection</li>
-                                <li>Recommendation engine</li>
-                                <li>Performance forecasting</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>Competitive Intelligence</h4>
-                            <ul>
-                                <li>Competitor analysis</li>
-                                <li>Market research</li>
-                                <li>Pricing intelligence</li>
-                                <li>Brand monitoring</li>
-                                <li>Opportunity identification</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$800/month</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- App Store Optimization (ASO) -->
-        <div class="service-detail-section" style="margin-bottom: 2rem;">
-            <div class="service-detail-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
-                <div class="service-detail-text">
-                    <div class="service-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h3>App Store Optimization (ASO)</h3>
-                    <p class="service-description">Our approach includes compelling visuals and user engagement strategies to boost conversions and retention. Optimize your app's visibility and downloads with data-driven ASO strategies.</p>
-                    
-                    <div class="service-features-detailed">
-                        <div class="feature-category">
-                            <h4>App Store Optimization</h4>
-                            <ul>
-                                <li>Keyword research & optimization</li>
-                                <li>App title & description optimization</li>
-                                <li>Visual asset optimization</li>
-                                <li>Conversion rate optimization</li>
-                                <li>Performance tracking & analytics</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="feature-category">
-                            <h4>User Engagement</h4>
-                            <ul>
-                                <li>App store listing optimization</li>
-                                <li>Review & rating management</li>
-                                <li>User acquisition strategies</li>
-                                <li>Retention optimization</li>
-                                <li>Competitive analysis</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="service-pricing">
-                        <span class="price-label">Starting at</span>
-                        <span class="price-amount">$1,000/month</span>
-                    </div>
-                </div>
-                <div class="service-image" style="text-align: center;">
-                    <img src="{{ url_for('static', filename='images/mobile.jpeg') }}" alt="App Store Optimization" style="width: 100%; max-width: 500px; border-radius: 1rem; box-shadow: var(--shadow-lg);">
-                </div>
-            </div>
+        <!-- Call to Action -->
+        <div class="cta-section" style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--gray-50); border-radius: 1rem;">
+            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: var(--gray-900);">Ready to Transform Your Marketing?</h3>
+            <p style="color: var(--gray-600); margin-bottom: 1.5rem;">Get a free consultation and discover how our AI-powered solutions can drive your business growth.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">Get Free Consultation</a>
         </div>
     </div>
 </section>
 
-<!-- Service Packages Section -->
-<section class="packages-section" style="padding: 2rem 0; background: var(--gray-50);">
-    <div class="services-container">
-        <div class="section-header fade-in-up">
-            <h2 class="section-title">Choose Your Perfect Package</h2>
-            <p class="section-subtitle">Select the package that best fits your business needs and budget. All packages include our AI-powered optimization and 24/7 monitoring.</p>
-        </div>
-        
-        <div class="packages-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 2rem;">
-            <!-- Starter Package -->
-            <div class="package-card" style="background: var(--white); padding: 1.5rem; border-radius: 1rem; box-shadow: var(--shadow); position: relative; overflow: hidden;">
-                <div class="package-header" style="text-align: center; margin-bottom: 1.5rem; position: relative;">
-                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); height: 4px; width: 100%; position: absolute; top: 0; left: 0;"></div>
-                    <div style="background: url('{{ url_for('static', filename='images/ai-hero.jpeg') }}'); background-size: cover; background-position: center; height: 120px; border-radius: 0.5rem; margin-bottom: 1rem; opacity: 0.1;"></div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Starter Package</h3>
-                    <p style="color: var(--gray-600);">Perfect for small businesses</p>
-                    <div class="package-price" style="margin: 1rem 0;">
-                        <span style="font-size: 2.5rem; font-weight: 800; color: var(--primary-color);">$2,500</span>
-                        <span style="color: var(--gray-600);">/month</span>
-                    </div>
-                </div>
-                
-                <ul class="package-features" style="list-style: none; margin-bottom: 1.5rem;">
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        SEO optimization (up to 10 pages)
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Social media management (2 platforms)
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Content creation (4 posts/month)
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Basic analytics & reporting
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Monthly strategy call
-                    </li>
-                </ul>
-                
-                <a href="{{ url_for('contact') }}" class="btn btn-primary" style="width: 100%; text-align: center;">Get Started</a>
-            </div>
-            
-            <!-- Professional Package -->
-            <div class="package-card" style="background: var(--white); padding: 2rem; border-radius: 1rem; box-shadow: var(--shadow-lg); position: relative; border: 2px solid var(--primary-color); overflow: hidden;">
-                <div class="popular-badge" style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: var(--white); padding: 0.5rem 1rem; border-radius: 1rem; font-size: 0.875rem; font-weight: 600; z-index: 10;">Most Popular</div>
-                
-                <div class="package-header" style="text-align: center; margin-bottom: 1.5rem; position: relative;">
-                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); height: 4px; width: 100%; position: absolute; top: 0; left: 0;"></div>
-                    <div style="background: url('{{ url_for('static', filename='images/team-office.jpg') }}'); background-size: cover; background-position: center; height: 120px; border-radius: 0.5rem; margin-bottom: 1rem; opacity: 0.1;"></div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Professional Package</h3>
-                    <p style="color: var(--gray-600);">Ideal for growing businesses</p>
-                    <div class="package-price" style="margin: 1rem 0;">
-                        <span style="font-size: 2.5rem; font-weight: 800; color: var(--primary-color);">$5,000</span>
-                        <span style="color: var(--gray-600);">/month</span>
-                    </div>
-                </div>
-                
-                <ul class="package-features" style="list-style: none; margin-bottom: 1.5rem;">
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Complete SEO optimization
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        PPC management (up to $5k spend)
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Social media management (4 platforms)
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Content creation (12 posts/month)
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Email marketing automation
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Advanced analytics & insights
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Bi-weekly strategy calls
-                    </li>
-                </ul>
-                
-                <a href="{{ url_for('contact') }}" class="btn btn-primary" style="width: 100%; text-align: center;">Get Started</a>
-            </div>
-            
-            <!-- Enterprise Package -->
-            <div class="package-card" style="background: var(--white); padding: 1.5rem; border-radius: 1rem; box-shadow: var(--shadow); position: relative; overflow: hidden;">
-                <div class="package-header" style="text-align: center; margin-bottom: 1.5rem; position: relative;">
-                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); height: 4px; width: 100%; position: absolute; top: 0; left: 0;"></div>
-                    <div style="background: url('{{ url_for('static', filename='images/ai-hero.jpeg') }}'); background-size: cover; background-position: center; height: 120px; border-radius: 0.5rem; margin-bottom: 1rem; opacity: 0.1;"></div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Enterprise Package</h3>
-                    <p style="color: var(--gray-600);">For large organizations</p>
-                    <div class="package-price" style="margin: 1rem 0;">
-                        <span style="font-size: 2.5rem; font-weight: 800; color: var(--primary-color);">Custom</span>
-                        <span style="color: var(--gray-600);">pricing</span>
-                    </div>
-                </div>
-                
-                <ul class="package-features" style="list-style: none; margin-bottom: 1.5rem;">
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Full-service marketing suite
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Unlimited PPC management
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        All social media platforms
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Unlimited content creation
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Advanced marketing automation
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Custom analytics & reporting
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Dedicated account manager
-                    </li>
-                    <li style="padding: 0.25rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                        <i class="fas fa-check" style="color: var(--success-color);"></i>
-                        Weekly strategy calls
-                    </li>
-                </ul>
-                
-                <a href="{{ url_for('contact') }}" class="btn btn-primary" style="width: 100%; text-align: center;">Contact Us</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(16, 185, 129, 0.8)), url('{{ url_for('static', filename='images/team-office.jpg') }}'); background-size: cover; background-position: center; background-attachment: fixed;">
-    <div class="cta-container">
-        <h2 class="fade-in-up" style="color: white; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">Ready to Get Started?</h2>
-        <p class="fade-in-up" style="color: rgba(255,255,255,0.95);">Let's discuss which services and package would work best for your business. Get a free consultation and custom proposal today!</p>
-        <div class="cta-buttons fade-in-up">
-            <a href="{{ url_for('contact') }}" class="btn btn-white">
-                <i class="fas fa-calendar"></i>
-                Schedule Free Consultation
-            </a>
-            <a href="tel:+12816709840" class="btn btn-outline-white">
-                <i class="fas fa-phone"></i>
-                Call +1 (281) 670-9840
-            </a>
-        </div>
-    </div>
-</section>
 {% endblock %}
-
-
-
-
-
-
-
