@@ -66,3 +66,9 @@ logs/
 # Temporary files
 *.tmp
 *.temp
+
+# Helper files
+push
+pull
+run
+nohup.out
