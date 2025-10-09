@@ -11,6 +11,11 @@ import sys
 project_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, project_dir)
 
+# Add virtual environment to Python path if it exists
+venv_path = os.path.join(project_dir, 'venv', 'lib', 'python3.12', 'site-packages')
+if os.path.exists(venv_path):
+    sys.path.insert(0, venv_path)
+
 # Import the Flask app
 from app import app
 
